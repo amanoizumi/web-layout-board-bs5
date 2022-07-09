@@ -2668,8 +2668,8 @@ progress {
 }
 
 .form-control:disabled, .form-control[readonly] {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
   opacity: 1;
 }
 
@@ -2873,8 +2873,8 @@ textarea.form-control-lg {
 }
 
 .form-select:disabled {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 .form-select:-moz-focusring {
