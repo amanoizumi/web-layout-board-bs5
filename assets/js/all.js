@@ -3,10 +3,9 @@
 $(function () {
   // 導覽列當前頁面的 active
   function navActive() {
-    console.log(window.location.pathname);
-    var path = window.location.pathname.split('/')[1];
-    var pathNameLen = path.length - 5;
-    var pathName = path.substring(0, pathNameLen);
+    var path = window.location.pathname.split('/');
+    var pathNameHTML = path.pop();
+    var pathName = pathNameHTML.replace('.html', '');
     $('.l-navbar .nav-link').each(function (idx, item) {
       var currentPage = item.lastChild.textContent.toLowerCase();
 
