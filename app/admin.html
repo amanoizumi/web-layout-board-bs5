@@ -8,7 +8,12 @@ current: admin
 <div class="container">
   <header class="d-flex align-items-center pt-8 pb-12">
     <h2 class="fw-bold fs-4 me-12">Admin</h2>
-    <a href="#" class="hover-text-primary d-flex align-items-center fw-bold text-dark">
+    <a
+      href="#"
+      class="hover-text-primary d-flex align-items-center fw-bold text-dark"
+      data-bs-target="#addAdmin"
+      data-bs-toggle="modal"
+    >
       <span class="material-icons text-primary me-2"> add </span>
       Add New Admin
     </a>
@@ -272,8 +277,9 @@ current: admin
     </div>
   </div>
 </div>
-<!-- edit admin data modal -->
-<div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdmin" aria-hidden="true">
+
+<!-- add admin data modal -->
+<div class="modal fade" id="addAdmin" tabindex="-1" aria-labelledby="addAdmin" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content position-relative">
       <div class="modal-body p-8">
@@ -333,8 +339,102 @@ current: admin
         </section>
       </div>
       <div class="modal-footer d-flex py-3 pe-7">
-        <button type="button" class="btn btn-outline-primary ms-auto me-3 px-8">Cancel</button>
-        <button type="button" class="btn btn-primary px-8">Add</button>
+        <button
+          type="button"
+          class="fw-bold btn btn-outline-primary ms-auto me-3 px-8"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+        <button type="button" class="fw-bold btn btn-primary px-8">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit admin data modal -->
+<div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdmin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content position-relative">
+      <div class="modal-body p-8">
+        <div class="d-flex align-items-center justify-content-between mb-8">
+          <h3 class="fs-4 fw-bold">Edit Admin</h3>
+          <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+            <span class="material-icons d-block"> close </span>
+          </button>
+        </div>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Account</h4>
+          <label for="adminName" class="form-label">Name</label>
+          <input type="text" value="Emir Wicks" class="form-control mb-4" id="adminName" readonly />
+          <label for="adminEmail" class="form-label">Email</label>
+          <input type="email" value="emir.wicks@mail.com" class="form-control" id="adminEmail" readonly />
+        </section>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Verification</h4>
+          <p class="d-flex align-items-center fw-bold mb-5">
+            <span class="material-icons me-2"> check_circle </span>Verified
+            <small class="fw-normal fs-7 ms-auto">2020/4/12</small>
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-gray text-primary fw-bold w-100 py-4 text-gray"
+            disabled
+          >
+            Send Verification Mail
+          </button>
+        </section>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Access Level</h4>
+          <select class="form-select" aria-label="Default select example">
+            <option value="admin">Admin</option>
+            <option value="normal">Normal</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Custom Access</h4>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="lecture" id="lecture" checked />
+            <label class="form-check-label" for="lecture">Lecture</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="coupon" id="coupon" />
+            <label class="form-check-label" for="coupon">Coupon</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="message" id="message" />
+            <label class="form-check-label" for="message">message</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="setting" id="setting" />
+            <label class="form-check-label" for="setting">setting</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="taskMenu" id="taskMenu" />
+            <label class="form-check-label" for="taskMenu">Task Menu</label>
+          </div>
+        </section>
+        <section class="pb-6">
+          <h4 class="fs-5 fw-bold mb-4">Deactivate Account</h4>
+          <p class="d-flex align-items-center text-danger mb-4">
+            <span class="material-icons me-2"> warning </span>
+            This cannot be undone!
+          </p>
+          <button type="button" class="btn btn-outline-danger w-100 fw-bold py-4">
+            Deactivate This Account
+          </button>
+        </section>
+      </div>
+      <div class="modal-footer d-flex py-3 pe-7">
+        <button
+          type="button"
+          class="fw-bold btn btn-outline-primary ms-auto me-3 px-8"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+        <button type="button" class="fw-bold btn btn-primary px-8">Update</button>
       </div>
     </div>
   </div>
