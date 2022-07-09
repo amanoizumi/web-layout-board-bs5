@@ -1,6 +1,11 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import '../../../node_modules/bootstrap/scss/functions';
+@import './helpers/variables';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 
-
-@import './layout/index.scss'
+@import './base/base';
+@import './mixins/mixins';
+@import './components/avatar';
+@import './components/icon';
+@import './layout/navbar';
+@import './pages/assignment';
+@import './pages/admin';

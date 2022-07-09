@@ -1,0 +1,341 @@
+---
+title: 管理員
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="container">
+  <header class="d-flex align-items-center pt-8 pb-12">
+    <h2 class="fw-bold fs-4 me-12">Admin</h2>
+    <a href="#" class="hover-text-primary d-flex align-items-center fw-bold text-dark">
+      <span class="material-icons text-primary me-2"> add </span>
+      Add New Admin
+    </a>
+    <a href="#" class="icon-button ms-auto me-4">
+      <span class="material-icons"> search </span>
+    </a>
+    <a href="#" class="icon-button">
+      <span class="material-icons"> notifications_active </span>
+    </a>
+  </header>
+  <table class="admin-table table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#adminModal"
+            class="text-dark hover-text-primary"
+          >
+            <span class="material-icons me-6"> remove_red_eye </span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#editAdmin" class="text-dark hover-text-primary">
+            <span class="material-icons"> edit </span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-flex justify-content-end">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link px-1" href="#"> <span class="material-icons d-block"> chevron_left </span></a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link px-1" href="#"> <span class="material-icons d-block"> chevron_right </span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- admin data modal -->
+<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="adminModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body d-flex p-8">
+        <div
+          class="modal-avatar"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=200&q=80');
+          "
+        ></div>
+        <div class="w-100 ps-6">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <p>#1</p>
+            <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+              <span class="material-icons d-block"> close </span>
+            </button>
+          </div>
+          <p>Admin</p>
+          <h3 class="fs-4 fw-bold">Emir Wicks</h3>
+          <p class="fs-7 mb-5">emir.wicks@mail.com</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="badge fw-normal bg-light text-dark">Verified</p>
+            <a href="#" id="toggleExpandBtns"><span class="material-icons"> expand_more </span></a>
+          </div>
+          <div id="expandBtns" class="d-none justify-content-between mt-8">
+            <button class="btn btn-outline-danger px-8">Deactivate</button>
+            <button class="btn btn-primary px-8">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- edit admin data modal -->
+<div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdmin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content position-relative">
+      <div class="modal-body p-8">
+        <div class="d-flex align-items-center justify-content-between mb-8">
+          <h3 class="fs-4 fw-bold">New Admin</h3>
+          <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+            <span class="material-icons d-block"> close </span>
+          </button>
+        </div>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Account</h4>
+          <label for="adminName" class="form-label">Name</label>
+          <input type="text" class="form-control mb-4" id="adminName" />
+          <label for="adminEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="adminEmail" />
+        </section>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Verification</h4>
+          <p class="d-flex align-items-center fw-bold mb-5">
+            <span class="material-icons text-danger me-2"> warning </span>Unverified
+          </p>
+          <button type="button" class="btn btn-outline-gray text-primary fw-bold w-100 py-4">
+            Send Verification Mail
+          </button>
+        </section>
+        <section class="pb-6 mb-6 border-bottom">
+          <h4 class="fs-5 fw-bold mb-4">Access Level</h4>
+          <select class="form-select text-secondary" aria-label="Default select example">
+            <option selected>-Choose access level-</option>
+            <option value="admin">Admin</option>
+            <option value="normal">Normal</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h4 class="fs-5 fw-bold mb-4">Custom Access</h4>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="lecture" id="lecture" checked />
+            <label class="form-check-label" for="lecture">Lecture</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="coupon" id="coupon" />
+            <label class="form-check-label" for="coupon">Coupon</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="message" id="message" />
+            <label class="form-check-label" for="message">message</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="setting" id="setting" />
+            <label class="form-check-label" for="setting">setting</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="taskMenu" id="taskMenu" />
+            <label class="form-check-label" for="taskMenu">Task Menu</label>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer d-flex py-3 pe-7">
+        <button type="button" class="btn btn-outline-primary ms-auto me-3 px-8">Cancel</button>
+        <button type="button" class="btn btn-primary px-8">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

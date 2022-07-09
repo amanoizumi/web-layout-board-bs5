@@ -1,0 +1,32 @@
+.l-navbar {
+  width: 296px;
+  position: fixed;
+  a:hover {
+    background: $gray-400;
+  }
+}
+.logo {
+  display: block;
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/week5/logo-ANSWER.svg')
+    no-repeat;
+  width: 151px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav-item.active a {
+  color: $primary;
+  &::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 32px;
+    background: $primary;
+  }
+}
+.admin {
+  position: fixed;
+  bottom: 0;
+}
